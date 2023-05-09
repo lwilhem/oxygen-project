@@ -13,10 +13,10 @@ export default defineConfig({
 	presets: [
 		presetUno({ dark: 'class' }),
 		presetIcons({
-			scale: 1.2,
+			//scale: 1.2,
 			prefix: 'i-',
 			collections: {
-				tabler: () => import('@iconify-json/tabler/icons.json').then((i) => i.default)
+				mdi: () => import('@iconify-json/mdi/icons.json').then((i) => i.default)
 			},
 			extraProperties: {
 				display: 'inline-block',

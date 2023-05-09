@@ -26,9 +26,9 @@ importers:
         specifier: ^0.51.12
         version: 0.51.12
     devDependencies:
-      '@iconify-json/tabler':
-        specifier: ^1.1.74
-        version: 1.1.74
+      '@iconify-json/mdi':
+        specifier: ^1.1.50
+        version: 1.1.50
       '@oxygen/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
@@ -376,8 +376,8 @@ packages:
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
 
-  /@iconify-json/tabler@1.1.74:
-    resolution: {integrity: sha512-dDlEXoTrSBH5+mV2IT/BUKisvxletRIW43aHs6cL4uCZSfk8HTNtXohbbxzEOdbw+wS+9JPGVIM9j8BLTpXWug==}
+  /@iconify-json/mdi@1.1.50:
+    resolution: {integrity: sha512-SgbT5w5eHCdOG74ZWPz7HlTGk6VsifIJhNi6lAsxj/5Nlqt6Cz4LlQmSa9eecU9p075Jub2aAx/o7YI+GCahRQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

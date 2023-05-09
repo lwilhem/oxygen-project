@@ -16,7 +16,7 @@
 		"@unocss/reset": "^0.51.12"
 	},
 	"devDependencies": {
-		"@iconify-json/tabler": "^1.1.74",
+		"@iconify-json/mdi": "^1.1.50",
 		"@oxygen/eslint-config": "workspace:*",
 		"@sveltejs/adapter-vercel": "^2.4.3",
 		"@sveltejs/kit": "^1.16.2",
