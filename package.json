@@ -1,0 +1,19 @@
+{
+	"name": "oxygen-project",
+	"version": "1.0.0",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"dev": "FORCE_COLOR=1 turbo dev",
+		"format": "FORCE_COLOR=1 turbo format",
+		"lint": "FORCE_COLOR=1 turbo lint",
+		"check": "FORCE_COLOR=1 turbo check",
+		"build": "FORCE_COLOR=1 turbo build"
+	},
+	"devDependencies": {
+		"eslint": "^8.40.0",
+		"prettier": "^2.8.8",
+		"prettier-plugin-svelte": "^2.10.0",
+		"turbo": "^1.9.3"
+	}
+}
