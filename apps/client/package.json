@@ -21,7 +21,7 @@
 		"svelte-splitpanes": "^0.7.13"
 	},
 	"devDependencies": {
-		"@iconify-json/mdi": "^1.1.50",
+		"@iconify-json/mdi": "^1.1.51",
 		"@oxygen/eslint-config": "workspace:*",
 		"@sveltejs/adapter-vercel": "^2.4.3",
 		"@sveltejs/kit": "^1.16.3",

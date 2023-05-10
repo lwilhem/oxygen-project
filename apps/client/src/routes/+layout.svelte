@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { tooltip } from '$lib'
 	import '@unocss/reset/tailwind-compat.css'
 	import 'virtual:uno.css'
 </script>
@@ -12,7 +11,6 @@
 	<nav class="col-span-1 row-span-14 border-r-1">
 		<a
 			href="/"
-			use:tooltip={{ content: 'REST' }}
 			class="h-20 w-full flex flex-col items-center justify-evenly py-2 transition-all hover:(bg-slate-100)"
 		>
 			<span class="i-mdi:link h-5 w-5" />
