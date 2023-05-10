@@ -25,6 +25,21 @@ importers:
       '@unocss/reset':
         specifier: ^0.51.12
         version: 0.51.12
+      fp-ts:
+        specifier: ^2.15.0
+        version: 2.15.0
+      io-ts:
+        specifier: ^2.2.20
+        version: 2.2.20(fp-ts@2.15.0)
+      rxjs:
+        specifier: ^7.8.1
+        version: 7.8.1
+      svelte-french-toast:
+        specifier: 1.0.4-beta.0
+        version: 1.0.4-beta.0(svelte@3.59.1)
+      svelte-splitpanes:
+        specifier: ^0.7.13
+        version: 0.7.13(svelte@3.59.1)
     devDependencies:
       '@iconify-json/mdi':
         specifier: ^1.1.50
@@ -34,10 +49,10 @@ importers:
         version: link:../../packages/eslint-config
       '@sveltejs/adapter-vercel':
         specifier: ^2.4.3
-        version: 2.4.3(@sveltejs/kit@1.16.2)
+        version: 2.4.3(@sveltejs/kit@1.16.3)
       '@sveltejs/kit':
-        specifier: ^1.16.2
-        version: 1.16.2(svelte@3.59.1)(vite@4.3.5)
+        specifier: ^1.16.3
+        version: 1.16.3(svelte@3.59.1)(vite@4.3.5)
       '@unocss/eslint-plugin':
         specifier: ^0.51.12
         version: 0.51.12(eslint@8.40.0)(typescript@5.0.4)
@@ -439,7 +454,7 @@ packages:
       detect-libc: 2.0.1
       https-proxy-agent: 5.0.1
       make-dir: 3.1.0
-      node-fetch: 2.6.10
+      node-fetch: 2.6.11
       nopt: 5.0.0
       npmlog: 5.0.1
       rimraf: 3.0.2
@@ -506,12 +521,12 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.16.2):
+  /@sveltejs/adapter-vercel@2.4.3(@sveltejs/kit@1.16.3):
     resolution: {integrity: sha512-3k/3udwaioFYdKDAgQcWSByB+KCbtjX+ARonYGCtYE0iuxWLStrESxy3SaU+17XD5Frh8w7tfY8ft4TV3ej3Dg==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.16.2(svelte@3.59.1)(vite@4.3.5)
+      '@sveltejs/kit': 1.16.3(svelte@3.59.1)(vite@4.3.5)
       '@vercel/nft': 0.22.6
       esbuild: 0.17.18
     transitivePeerDependencies:
@@ -519,8 +534,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit@1.16.2(svelte@3.59.1)(vite@4.3.5):
-    resolution: {integrity: sha512-yxcpA4nvlVlJ+VyYnj0zD3QN05kfmoh4OyitlPrVG34nnZSHzFpE4eZ33X1A/tc9prslSFRhpM6rWngCs0nM8w==}
+  /@sveltejs/kit@1.16.3(svelte@3.59.1)(vite@4.3.5):
+    resolution: {integrity: sha512-8uv0udYRpVuE1BweFidcWHfL+u2gAANKmvIal1dN/FWPBl7DJYbt9zYEtr3bNTiXystT8Sn0Wp54RfwpbPqHjQ==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -1417,9 +1432,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /esm-env-robust@0.0.3:
+    resolution: {integrity: sha512-90Gnuw2DALOqlL1581VxP3GHPUNHX9U+fQ+8FNcTTFClhY5gEggAAnJ3q1b2Oq23knRsjv8YpNeMRPaMLUymOA==}
+    dependencies:
+      esm-env: 1.0.0
+    dev: false
+
   /esm-env@1.0.0:
     resolution: {integrity: sha512-Cf6VksWPsTuW01vU9Mk/3vRue91Zevka5SjyNf3nEpokFRuqt/KjUQoGAwq9qMmhpLTHmXzSIrFRw8zxWzmFBA==}
-    dev: true
 
   /espree@9.5.2:
     resolution: {integrity: sha512-7OASN1Wma5fum5SrNhFMAMJxOUAbhyfQ8dQ//PJaJbNw0URTPWqIghHWt1MmAANKhHZIYOHruW4Kw4ruUWOdGw==}
@@ -1543,6 +1563,10 @@ packages:
 
   /flatted@3.2.7:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
+
+  /fp-ts@2.15.0:
+    resolution: {integrity: sha512-3o6EllAvGuCsDgjM+frscLKDRPR9pqbrg13tJ13z86F4eni913kBV8h85rM6zpu2fEvJ8RWA0ouYlUWwHEmxTg==}
+    dev: false
 
   /fs-minipass@2.1.0:
     resolution: {integrity: sha512-V/JgOLFCS+R6Vcq0slCuaeWEdNC3ouDlJMNIsacH2VtALiu9mV4LPrHc5cDl8k5aw6J8jwgWWpiTo5RYhmIzvg==}
@@ -1694,6 +1718,14 @@ packages:
 
   /inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
+
+  /io-ts@2.2.20(fp-ts@2.15.0):
+    resolution: {integrity: sha512-Rq2BsYmtwS5vVttie4rqrOCIfHCS9TgpRLFpKQCM1wZBBRY9nWVGmEvm2FnDbSE2un1UE39DvFpTR5UL47YDcA==}
+    peerDependencies:
+      fp-ts: ^2.5.0
+    dependencies:
+      fp-ts: 2.15.0
+    dev: false
 
   /is-binary-path@2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
@@ -1962,8 +1994,8 @@ packages:
     resolution: {integrity: sha512-9VvspTSUp2Sxbl+9vbZTlFGq9lHwE8GDVVekxx6YsNd1YH59sb3Ba8v3Y3cD8PkLNcileGGcA21PFjVl0jzDaw==}
     dev: true
 
-  /node-fetch@2.6.10:
-    resolution: {integrity: sha512-5YytjUVbwzjE/BX4N62vnPPkGNxlJPwdA9/ArUc4pcM6cYS4Hinuv4VazzwjMGgnWuiQqcemOanib/5PpcsGug==}
+  /node-fetch@2.6.11:
+    resolution: {integrity: sha512-4I6pdBY1EthSqDmJkiNk3JIT8cswwR9nfeW/cPdUagJYEQG7R95WRH74wpz7ma8Gh/9dI9FP+OU+0E4FvtA55w==}
     engines: {node: 4.x || >=6.0.0}
     peerDependencies:
       encoding: ^0.1.0
@@ -2225,8 +2257,8 @@ packages:
     dependencies:
       glob: 7.2.3
 
-  /rollup@3.21.5:
-    resolution: {integrity: sha512-a4NTKS4u9PusbUJcfF4IMxuqjFzjm6ifj76P54a7cKnvVzJaG12BLVR+hgU2YDGHzyMMQNxLAZWuALsn8q2oQg==}
+  /rollup@3.21.6:
+    resolution: {integrity: sha512-SXIICxvxQxR3D4dp/3LDHZIJPC8a4anKMHd4E3Jiz2/JnY+2bEjqrOokAauc5ShGVNFHlEFjBXAXlaxkJqIqSg==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -2244,6 +2276,12 @@ packages:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
       queue-microtask: 1.2.3
+
+  /rxjs@7.8.1:
+    resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
+    dependencies:
+      tslib: 2.5.0
+    dev: false
 
   /sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
@@ -2421,6 +2459,15 @@ packages:
       svelte: 3.59.1
     dev: false
 
+  /svelte-french-toast@1.0.4-beta.0(svelte@3.59.1):
+    resolution: {integrity: sha512-PkYNukEQAPZyV5ei+JzeYEsbaXFSbJS8/SDTdC8giYa5Atxp2SRepFnPDWx6mu7rV53g886FNLktPMLwRljkpw==}
+    peerDependencies:
+      svelte: ^3.57.0
+    dependencies:
+      svelte: 3.59.1
+      svelte-writable-derived: 3.0.1(svelte@3.59.1)
+    dev: false
+
   /svelte-hmr@0.15.1(svelte@3.59.1):
     resolution: {integrity: sha512-BiKB4RZ8YSwRKCNVdNxK/GfY+r4Kjgp9jCLEy0DuqAKfmQtpL38cQK3afdpjw4sqSs4PLi3jIPJIFp259NkZtA==}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
@@ -2477,6 +2524,23 @@ packages:
       svelte: 3.59.1
       typescript: 5.0.4
     dev: true
+
+  /svelte-splitpanes@0.7.13(svelte@3.59.1):
+    resolution: {integrity: sha512-LiAf4OEZqRJanoax9mextXtQ0JzrdCqX2tOgVO+yJu2XNyGz5j5fGbw8+5AXgOasPi/m1nv8n2Lt+XYFRfvIGg==}
+    peerDependencies:
+      svelte: ^3.54.0
+    dependencies:
+      esm-env-robust: 0.0.3
+      svelte: 3.59.1
+    dev: false
+
+  /svelte-writable-derived@3.0.1(svelte@3.59.1):
+    resolution: {integrity: sha512-zBWCS5c3MA9o4NT/UJHP3KoPOhtmH2ZQ/QRK31w9LzLdPP7MNncUcBGIu4iH2RVt17iRfR6agm7nEqwNvsYuMw==}
+    peerDependencies:
+      svelte: ^3.2.1
+    dependencies:
+      svelte: 3.59.1
+    dev: false
 
   /svelte@3.59.1:
     resolution: {integrity: sha512-pKj8fEBmqf6mq3/NfrB9SLtcJcUvjYSWyePlfCqN9gujLB25RitWK8PvFzlwim6hD/We35KbPlRteuA6rnPGcQ==}
@@ -2537,7 +2601,6 @@ packages:
 
   /tslib@2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
-    dev: true
 
   /tsutils@3.21.0(typescript@5.0.4):
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
@@ -2720,7 +2783,7 @@ packages:
     dependencies:
       esbuild: 0.17.18
       postcss: 8.4.23
-      rollup: 3.21.5
+      rollup: 3.21.6
     optionalDependencies:
       fsevents: 2.3.2
     dev: true

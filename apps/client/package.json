@@ -13,13 +13,18 @@
 	},
 	"dependencies": {
 		"@oxygen/core": "workspace:*",
-		"@unocss/reset": "^0.51.12"
+		"@unocss/reset": "^0.51.12",
+		"fp-ts": "^2.15.0",
+		"io-ts": "^2.2.20",
+		"rxjs": "^7.8.1",
+		"svelte-french-toast": "1.0.4-beta.0",
+		"svelte-splitpanes": "^0.7.13"
 	},
 	"devDependencies": {
 		"@iconify-json/mdi": "^1.1.50",
 		"@oxygen/eslint-config": "workspace:*",
 		"@sveltejs/adapter-vercel": "^2.4.3",
-		"@sveltejs/kit": "^1.16.2",
+		"@sveltejs/kit": "^1.16.3",
 		"@unocss/eslint-plugin": "^0.51.12",
 		"@unocss/extractor-svelte": "^0.51.12",
 		"svelte": "^3.59.1",
