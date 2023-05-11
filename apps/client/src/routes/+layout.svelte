@@ -1,5 +1,8 @@
 <script lang="ts">
+	import { tippy } from '$lib'
 	import '@unocss/reset/tailwind-compat.css'
+	import 'tippy.js/animations/perspective-subtle.css'
+	import 'tippy.js/dist/tippy.css'
 	import 'virtual:uno.css'
 </script>
 
@@ -12,6 +15,13 @@
 		<a
 			href="/"
 			class="h-20 w-full flex flex-col items-center justify-evenly py-2 transition-all hover:(bg-slate-100)"
+			use:tippy={{
+				content: 'REST',
+				placement: 'right',
+				arrow: true,
+				//theme: 'test',
+				animation: 'perspective-subtle'
+			}}
 		>
 			<span class="i-mdi:link h-5 w-5" />
 		</a>
@@ -19,6 +29,13 @@
 		<a
 			href="/"
 			class="h-20 w-full flex flex-col items-center justify-evenly py-2 transition-all hover:(bg-slate-100)"
+			use:tippy={{
+				content: 'GraphQL',
+				placement: 'right',
+				arrow: true,
+				//theme: 'test',
+				animation: 'perspective-subtle'
+			}}
 		>
 			<span class="i-mdi:graphql h-5 w-5" />
 		</a>
@@ -26,6 +43,13 @@
 		<a
 			href="/"
 			class="h-20 w-full flex flex-col items-center justify-evenly border-b--1 py-2 transition-all hover:(bg-slate-100)"
+			use:tippy={{
+				content: 'Realtime',
+				placement: 'right',
+				arrow: true,
+				//theme: 'test',
+				animation: 'perspective-subtle'
+			}}
 		>
 			<span class="i-mdi-clock-time-five-outline h-5 w-5" />
 		</a>
