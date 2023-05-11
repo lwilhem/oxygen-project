@@ -12,14 +12,11 @@
 		"build": "vite build"
 	},
 	"dependencies": {
+		"@floating-ui/dom": "^1.2.7",
 		"@oxygen/core": "workspace:*",
 		"@unocss/reset": "^0.51.12",
-		"fp-ts": "^2.15.0",
-		"io-ts": "^2.2.20",
-		"rxjs": "^7.8.1",
 		"svelte-french-toast": "1.0.4-beta.0",
-		"svelte-splitpanes": "^0.7.13",
-		"tippy.js": "^6.3.7"
+		"svelte-splitpanes": "^0.7.13"
 	},
 	"devDependencies": {
 		"@iconify-json/mdi": "^1.1.51",
