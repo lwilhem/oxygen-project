@@ -1,6 +1,9 @@
 <script lang="ts">
+	import { page } from '$app/stores'
 	import '@unocss/reset/tailwind-compat.css'
 	import 'virtual:uno.css'
+
+	let active_url = $page.url.pathname
 </script>
 
 <svelte:head>
@@ -13,6 +16,7 @@
 		<a
 			href="/"
 			class="h-20 w-full flex flex-col items-center justify-evenly py-2 transition-all hover:(bg-slate-100)"
+			class:active={active_url === '/'}
 		>
 			<span class="i-mdi:link h-5 w-5" />
 		</a>
@@ -20,6 +24,7 @@
 		<a
 			href="/"
 			class="h-20 w-full flex flex-col items-center justify-evenly py-2 transition-all hover:(bg-slate-100)"
+			class:active={active_url === '/graphql'}
 		>
 			<span class="i-mdi:graphql h-5 w-5" />
 		</a>
@@ -27,6 +32,7 @@
 		<a
 			href="/"
 			class="h-20 w-full flex flex-col items-center justify-evenly py-2 transition-all hover:(bg-slate-100)"
+			class:active={active_url.includes('/realtime')}
 		>
 			<span class="i-mdi-clock-time-five-outline h-5 w-5" />
 		</a>
@@ -36,3 +42,9 @@
 		<slot />
 	</section>
 </main>
+
+<style lang="postcss">
+	.active {
+		@apply border-l-4 border-l-indigo-700 transition-all;
+	}
+</style>
