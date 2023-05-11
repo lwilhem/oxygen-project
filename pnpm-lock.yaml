@@ -22,9 +22,6 @@ importers:
       '@floating-ui/dom':
         specifier: ^1.2.7
         version: 1.2.7
-      '@oxygen/core':
-        specifier: workspace:*
-        version: link:../../packages/core
       '@unocss/reset':
         specifier: ^0.51.12
         version: 0.51.12

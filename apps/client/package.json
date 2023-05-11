@@ -13,7 +13,6 @@
 	},
 	"dependencies": {
 		"@floating-ui/dom": "^1.2.7",
-		"@oxygen/core": "workspace:*",
 		"@unocss/reset": "^0.51.12",
 		"svelte-french-toast": "1.0.4-beta.0",
 		"svelte-splitpanes": "^0.7.13"
