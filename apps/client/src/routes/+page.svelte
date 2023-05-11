@@ -1,6 +1,7 @@
-<div class="h-12 w-full bg-red-500">
-	<span>t</span>
-</div>
+<script>
+	import { RequestInput } from '$lib'
+</script>
 
-<span>request config tabs</span>
-<span>reponse pane</span>
+<div class="h-16 w-full flex items-center justify-center px-3">
+	<RequestInput />
+</div>
