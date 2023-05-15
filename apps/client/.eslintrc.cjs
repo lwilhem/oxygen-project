@@ -1,3 +1,4 @@
 module.exports = {
-	extends: ['@oxygen']
+	plugins: ['@unocss'],
+	extends: ['@oxygen', 'plugin:@unocss/recommended']
 }

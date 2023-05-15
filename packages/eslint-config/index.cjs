@@ -12,7 +12,7 @@ const eslintConfig = {
 		es2017: true,
 		node: true
 	},
-	ignorePatterns: ['*.js', '*.mjs', '*.cjs'],
+	ignorePatterns: ['*.js', '*.mjs', '*.cjs', '*.css'],
 	plugins: ['@typescript-eslint', 'svelte', 'unused-imports'],
 	extends: [
 		'eslint:recommended',
