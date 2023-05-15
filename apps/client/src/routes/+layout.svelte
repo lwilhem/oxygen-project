@@ -7,6 +7,8 @@
 	<meta name="description" content="dev build oxygen" />
 </svelte:head>
 
-<slot />
+<main class="h-screen w-screen flex items-center justify-center">
+	<slot />
+</main>
 
 <style uno:preflights uno:safelist global></style>
