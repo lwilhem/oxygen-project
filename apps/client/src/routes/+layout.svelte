@@ -9,10 +9,10 @@
 	<meta name="description" content="dev build oxygen" />
 </svelte:head>
 
-<main class="h-screen max-h-screen min-h-screen w-screen">
+<main class="h-screen max-h-screen min-h-screen w-screen flex flex-col items-center justify-center">
 	<Splitpanes horizontal class="no-splitter" dblClickSplitter={false}>
 		<Pane minSize={8} maxSize={8} size={8}>
-			<div class="h-full w-full flex items-center justify-between px-6 text-zinc-950">
+			<div class="h-full w-full flex items-center justify-between bg-zinc-200 px-6 text-zinc-950">
 				<span class="text-sm font-bold uppercase">Oxygen</span>
 			</div>
 		</Pane>
