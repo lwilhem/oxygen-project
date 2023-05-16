@@ -1,7 +1,6 @@
 import {
 	defineConfig,
 	presetIcons,
-	presetWebFonts,
 	presetWind,
 	transformerDirectives,
 	transformerVariantGroup
@@ -11,12 +10,6 @@ export default defineConfig({
 	transformers: [transformerDirectives(), transformerVariantGroup()],
 	presets: [
 		presetWind(),
-		presetWebFonts({
-			provider: 'bunny',
-			fonts: {
-				sans: ['']
-			}
-		}),
 		presetIcons({
 			scale: 1.2,
 			prefix: 'i-',
