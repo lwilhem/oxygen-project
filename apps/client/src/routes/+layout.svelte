@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { CoreLayout } from '$lib/components'
 	import { Pane, Splitpanes } from 'svelte-splitpanes'
 	import '../app.css'
 </script>
@@ -15,12 +16,15 @@
 				<span class="text-sm font-bold uppercase">Oxygen</span>
 			</div>
 		</Pane>
-		<Pane class="border-y-1">
-			<!-- Display on pane element-->
-			<slot />
+		<Pane class="flex items-center justify-center border-y-1">
+			<CoreLayout>
+				<slot slot="selected_api" />
+			</CoreLayout>
 		</Pane>
 		<Pane size={4} minSize={4} maxSize={4}>
-			<span>Footer</span>
+			<div class="h-full w-full bg-zinc-200">
+				<span class="text-zinc-200">t</span>
+			</div>
 		</Pane>
 	</Splitpanes>
 </main>
