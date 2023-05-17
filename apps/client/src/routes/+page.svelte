@@ -1,3 +1,1 @@
-<div class="h-full w-full flex items-center justify-center">
-	<span>t</span>
-</div>
+<span class="text-8xl font-black">t</span>

@@ -1,46 +1,43 @@
 <script lang="ts">
-	import { CoreLayout } from '$lib/components'
-	import { Pane, Splitpanes } from 'svelte-splitpanes'
-	import '../app.css'
+	import { goto } from '$app/navigation'
+	import { page } from '$app/stores'
+
+	let isZenMode = false
+	let pathname = $page.url.pathname
 </script>
 
 <svelte:head>
 	<title>Oxygen - API Devtool</title>
-	<meta name="description" content="dev build oxygen" />
+	<meta name="description" content="Oxygen - API Devtool In Svelte" />
 </svelte:head>
 
-<main class="h-screen max-h-screen min-h-screen w-screen flex flex-col items-center justify-center">
-	<Splitpanes horizontal class="no-splitter" dblClickSplitter={false}>
-		<Pane minSize={8} maxSize={8} size={8}>
-			<div class="h-full w-full flex items-center justify-between bg-zinc-200 px-6 text-zinc-950">
-				<span class="text-sm font-bold uppercase">Oxygen</span>
-			</div>
-		</Pane>
-		<Pane class="flex items-center justify-center border-y-1">
-			<CoreLayout>
-				<slot slot="selected_api" />
-			</CoreLayout>
-		</Pane>
-		<Pane size={4} minSize={4} maxSize={4}>
-			<div class="h-full w-full bg-zinc-200">
-				<span class="text-zinc-200">t</span>
-			</div>
-		</Pane>
-	</Splitpanes>
+<main class="h-screen w-screen justify-center">
+	{#if !isZenMode}
+		<section class="h-6% w-full flex items-center justify-center">
+			<button
+				class="i-mdi:latitude h-8 w-20 cursor-pointer"
+				on:click|preventDefault={(e) => goto('/')}
+			/>
+		</section>
+	{/if}
+	<section class="h-90% w-full flex border-y-1" class:h-96%={isZenMode}>
+		<aside class="h-full max-h-full w-20 border-r-1">
+			<a href="/" class="nav-btn transition-all" class:active={pathname === '/'}>
+				<span class="i-mdi:link h-5 w-5" />
+				<span class="text-sm font-semibold uppercase" class:hidden={isZenMode}>rest</span>
+			</a>
+		</aside>
+		<section class="h-full max-h-full w-full flex items-center justify-center">
+			<slot />
+		</section>
+	</section>
+	<section class="h-4% w-full">
+		<span>t</span>
+	</section>
 </main>
 
-<style uno:preflights uno:safelist global>
-	:global(.no-splitter .splitpanes__splitter) {
-		--at-apply: hidden;
-	}
-
-	:global(.no-splitter.splitpanes--vertical > .splitpanes__splitter) {
-		--at-apply: w-0;
-		--at-apply: pointer-events-none;
-	}
-
-	:global(.no-splitter.splitpanes--horizontal > .splitpanes__splitter) {
-		--at-apply: h-0;
-		--at-apply: pointer-events-none;
+<style>
+	.active {
+		--at-apply: border-l-4 border-l-teal-500 bg-zinc-50;
 	}
 </style>

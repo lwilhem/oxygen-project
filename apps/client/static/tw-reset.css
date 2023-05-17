@@ -12,6 +12,14 @@
 	border-width: 0; /* 2 */
 	border-style: solid; /* 2 */
 	border-color: #e5e7eb; /* 2 */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
 }
 
 /*
