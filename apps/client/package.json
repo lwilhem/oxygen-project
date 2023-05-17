@@ -9,17 +9,18 @@
 		"format": "prettier --write --ignore-path ../../.gitignore \"**/*.{svelte,js,ts,html,json,cjs}\"",
 		"lint": "eslint --ignore-path ../../.gitignore \"**/*.{ts,svelte}\"",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"build": "vite build"
+		"build": "vite build",
+		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@unocss/reset": "^0.51.13",
-		"svelte-legos": "^0.2.1"
+		"@floating-ui/dom": "^1.2.8",
+		"@unocss/reset": "^0.51.13"
 	},
 	"devDependencies": {
 		"@iconify-json/mdi": "^1.1.52",
 		"@oxygen/eslint-config": "workspace:*",
-		"@sveltejs/adapter-auto": "^2.0.1",
-		"@sveltejs/kit": "^1.16.3",
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/kit": "^1.17.0",
 		"@unocss/eslint-plugin": "^0.51.13",
 		"@unocss/extractor-svelte": "^0.51.13",
 		"svelte": "^3.59.1",

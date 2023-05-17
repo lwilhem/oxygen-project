@@ -1,5 +1,5 @@
-<script lang="ts">
-	let msg = 'App layout'
+<script>
+	import { RestRequestInput } from '$lib/components'
 </script>
 
-<span>{msg}</span>
+<RestRequestInput />
