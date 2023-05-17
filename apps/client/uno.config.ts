@@ -1,23 +1,21 @@
+import extractorSvelte from '@unocss/extractor-svelte'
 import {
 	defineConfig,
 	presetAttributify,
 	presetIcons,
 	presetWind,
 	transformerAttributifyJsx,
-	transformerCompileClass,
 	transformerDirectives,
 	transformerVariantGroup
 } from 'unocss'
 
 export default defineConfig({
-	transformers: [
-		transformerDirectives(),
-		transformerVariantGroup(),
-		transformerAttributifyJsx(),
-		transformerCompileClass()
-	],
+	extractors: [extractorSvelte()],
+	transformers: [transformerDirectives(), transformerVariantGroup(), transformerAttributifyJsx()],
 	presets: [
-		presetWind(),
+		presetWind({
+			dark: 'class'
+		}),
 		presetAttributify(),
 		presetIcons({
 			collections: {

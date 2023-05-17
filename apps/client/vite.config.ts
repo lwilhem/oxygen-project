@@ -3,10 +3,5 @@ import unocss from 'unocss/vite'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-	plugins: [
-		unocss({
-			mode: 'svelte-scoped'
-		}),
-		sveltekit()
-	]
+	plugins: [unocss(), sveltekit()]
 })
