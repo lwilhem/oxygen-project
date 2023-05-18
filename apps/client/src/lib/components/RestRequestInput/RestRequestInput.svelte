@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { dropdown } from '$lib/components'
+	import { dropdown } from '../Dropdown/actions'
 
 	let http_method = 'GET'
 	let url = 'https://echo.hoppscotch.io'
@@ -14,7 +14,7 @@
 <div class="h-10 w-full flex items-center justify-between px-6">
 	<div class="h-8 w-3/4 flex items-center justify-center">
 		<button
-			use:dropdown={{ values: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'] }}
+			use:dropdown={{}}
 			class="h-full w-40 flex items-center justify-between rounded-l-md px-4"
 			border="1 zinc-300 r-none dark:zinc-700"
 			bg="zinc-100 dark:zinc-600"

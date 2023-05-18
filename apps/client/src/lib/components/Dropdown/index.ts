@@ -1,2 +1,2 @@
-export { default as Dropdown } from './DropDown.svelte'
+export { default as Dropdown } from './Dropdown.svelte'
 export * from './actions'

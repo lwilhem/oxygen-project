@@ -1,12 +1,9 @@
 import { Dropdown } from '$lib/components'
-import type { ActionReturn } from 'svelte/action'
+import type { SvelteComponent } from 'svelte'
+import type { Action } from 'svelte/action'
 
-export interface IDropDownProps {
-	values: string[]
-}
-
-export const dropdown = (node: HTMLElement, props: IDropDownProps): ActionReturn => {
-	let component: Dropdown | null = null
+export const dropdown = ((node, props) => {
+	let component: SvelteComponent | null = null
 
 	node.addEventListener('click', () => {
 		if (!component) {
@@ -16,7 +13,6 @@ export const dropdown = (node: HTMLElement, props: IDropDownProps): ActionReturn
 			component = null
 		}
 	})
-
 	return {
 		destroy() {
 			node.removeEventListener('click', () => {
@@ -32,4 +28,4 @@ export const dropdown = (node: HTMLElement, props: IDropDownProps): ActionReturn
 			props = new_props
 		}
 	}
-}
+}) satisfies Action
