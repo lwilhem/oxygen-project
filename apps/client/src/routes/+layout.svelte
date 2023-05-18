@@ -9,7 +9,7 @@
 	<meta name="description" content="Oxygen - API Devtool In Svelte" />
 </svelte:head>
 
-<main class="h-screen w-screen" bg="zinc-50 dark:zinc-900" text="zinc-900 dark:zinc-50 sm">
+<main class="h-screen w-screen" bg="zinc-50 dark:zinc-950" text="zinc-900 dark:zinc-100 sm">
 	<section class="h-6% flex items-center justify-center">
 		<span class="i-mdi:atom-variant h-8 w-8 cursor-pointer" />
 	</section>
@@ -35,7 +35,7 @@
 			on:click={() => window.document.body.classList.toggle('dark')}
 			class="h-full w-8"
 			bg="zinc-50 dark:zinc-900"
-			text="zinc-900 dark:zinc-50"
+			text="zinc-900 dark:zinc-100"
 		>
 			<span class="i-mdi:weather-sunny h-6 w-6" />
 		</button>
