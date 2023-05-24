@@ -11,9 +11,9 @@
 		"build": "FORCE_COLOR=1 turbo build"
 	},
 	"devDependencies": {
-		"eslint": "^8.40.0",
+		"eslint": "^8.41.0",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.0",
-		"turbo": "^1.9.8"
+		"turbo": "^1.9.9"
 	}
 }
