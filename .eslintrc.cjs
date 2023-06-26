@@ -1,1 +1,1 @@
-module.exports = { ...require('./packages/eslint-config/index.cjs'), root: true }
+module.exports = { root: true, extends: ['@api-devtool'] }
