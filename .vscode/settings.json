@@ -1,0 +1,7 @@
+{
+	"css.validate": true,
+	"material-icon-theme.activeIconPack": "none",
+	"files.associations": {
+		"*.css": "tailwindcss"
+	}
+}
