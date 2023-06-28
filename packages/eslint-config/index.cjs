@@ -18,6 +18,7 @@ const eslintConfig = {
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:svelte/recommended',
+		'@unocss',
 		'turbo',
 		'prettier'
 	],
