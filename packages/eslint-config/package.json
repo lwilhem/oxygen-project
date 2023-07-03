@@ -8,14 +8,14 @@
 		"@typescript-eslint/parser": "^5.60.1",
 		"@unocss/eslint-config": "^0.53.4",
 		"eslint-config-prettier": "^8.8.0",
-		"eslint-config-turbo": "^1.10.6",
-		"eslint-plugin-svelte": "^2.31.1",
+		"eslint-config-turbo": "^1.10.7",
+		"eslint-plugin-svelte": "^2.32.2",
 		"eslint-plugin-unused-imports": "^2.0.0"
 	},
 	"devDependencies": {
-		"eslint": "^8.43.0",
-		"svelte": "^4.0.0",
-		"typescript": "^5.1.5"
+		"eslint": "^8.44.0",
+		"svelte": "^4.0.2",
+		"typescript": "^5.1.6"
 	},
 	"publishConfig": {
 		"access": "public"

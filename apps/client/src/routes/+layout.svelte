@@ -3,5 +3,8 @@
 	<meta name="description" content="Oxygen - API Devtool In Svelte" />
 </svelte:head>
 
-<span class="text-xl font-black">layout</span>
-<slot />
+<main class="h-screen max-h-screen max-w-screen w-screen bg-zinc-900 text-zinc-100">
+	<section>
+		<slot />
+	</section>
+</main>
